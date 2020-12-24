@@ -39,7 +39,7 @@ public class FrontController extends HttpServlet {
 		String sp = uri.substring(cPath.length());
 
 		Command com = null;
-// ´ÙÁßif¹® ¤Ì´ë½Å ½áÁÖ½Å ¿ÏÀüÇÑ ÆĞÅ°Áö¸í Å¬·¡½º.
+// ë‹¤ì¤‘ifë¬¸ ëŒ€ì‹  ì¨ì£¼ëŠ” ë¦¬í”Œë ‰ì…˜ = í´ë˜ìŠ¤ì™€ íŒ¨í‚¤ì§€ë¥¼ ê°™ì´ ì‚¬ìš©í•˜ëŠ” ê²ƒ.
 		MemberDAO dao = new MemberDAO();
 		Map<String, String> menus = dao.menuMap();
 
@@ -68,7 +68,7 @@ public class FrontController extends HttpServlet {
 			PrintWriter out = resp.getWriter();
 			out.print("<html>");
 			out.print("<body>");
-			out.print("ÇØ´ç ¼­ºñ½º´Â Á¦°øÇÏÁö ¾Ê½À´Ï´Ù.");
+			out.print("í•´ë‹¹ ì„œë¹„ìŠ¤ëŠ” ì œê³µí•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.");
 			out.print("</body>");
 			out.print("</html>");
 		}
